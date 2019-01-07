@@ -1,0 +1,14 @@
+uuid: 29018691-35b1-420a-892a-5950e5a778e0
+name: snapple
+mail: tim@electriccitizen.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
