@@ -1,10 +1,10 @@
-# Snapple
+# [PROJECT]
 
-[![CircleCI](https://circleci.com/gh/electriccitizen/snapple.svg?style=shield)](https://circleci.com/gh/electriccitizen/snapple)
-[![Dashboard snapple](https://img.shields.io/badge/dashboard-snapple-yellow.svg)](https://dashboard.pantheon.io/sites/9ec12d94-c804-44b7-968e-166a0b49fdc0#dev/code)
-[![Dev Site snapple](https://img.shields.io/badge/site-snapple-blue.svg)](http://dev-snapple.pantheonsite.io/)
+[![CircleCI](https://circleci.com/gh/electriccitizen/[SITE].svg?style=shield)](https://circleci.com/gh/electriccitizen/[SITE])
+[![Dashboard [SITE]](https://img.shields.io/badge/dashboard-[SITE]-yellow.svg)](https://dashboard.pantheon.io/sites/9ec12d94-c804-44b7-968e-166a0b49fdc0#dev/code)
+[![Dev Site [SITE]](https://img.shields.io/badge/site-[SITE]-blue.svg)](http://dev-[SITE].pantheonsite.io/)
 
-Snapple is a Composer-based Drupal 8 application hosted on [Pantheon](http://dashboard.getpantheon.com). Follow this README to create your local environment, and to learn the best practices for effectively contributing to the project.
+[PROJECT] is a Composer-based Drupal 8 application hosted on [Pantheon](http://dashboard.getpantheon.com). Follow this README to create your local environment, and to learn the best practices for effectively contributing to the project.
 
 ## Onboarding
 
@@ -12,11 +12,11 @@ See the [setup documentation](docs/SETUP.md) if you are installing VirtualBox, D
 
 ```cd ~/Projects```
 
-```git clone git@github.com:electriccitizen/snapple.git```
+```git clone git@github.com:electriccitizen/[SITE].git```
 
 Move to your project's root folder and initialize the site:
 
-```cd snapple```
+```cd [SITE]```
 
 ```composer install```
 
@@ -24,8 +24,8 @@ Move to your project's root folder and initialize the site:
 
 Once the site is up, you are ready to start working:
 
-* Local: http://snapple.docksal
-* Dev: http://dev-snapple.pantheonsite.io
+* Local: http://[SITE].docksal
+* Dev: http://dev-[SITE].pantheonsite.io
 * User: admin/admin (local)
 
 You can run [fin init](docs/commands/INIT.md) any time you want to reset or guarantee that your local environment is in a safe one-to-one state with your upstream environment. 
