@@ -23,14 +23,17 @@ $config_directories = array(
   CONFIG_SYNC_DIRECTORY => dirname(DRUPAL_ROOT) . '/config',
 );
 
-
-/**
- * If there is a local settings file, then include it
- */
-$docksal_settings = __DIR__ . "/settings.docksal.php";
-if (file_exists($docksal_settings)) {
-    include $docksal_settings;
+if (!isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+    /**
+    * If there is a local settings file, then include it
+    */
+    $docksal_settings = __DIR__ . "/settings.docksal.php";
+    if (file_exists($docksal_settings)) {
+        include $docksal_settings;
+    }
 }
+
+
 
 /**
  * If there is a local settings file, then include it
