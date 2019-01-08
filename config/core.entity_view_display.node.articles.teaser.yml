@@ -20,3 +20,4 @@ content:
     region: content
 hidden:
   field_activity_tracker: true
+  field_content: true
