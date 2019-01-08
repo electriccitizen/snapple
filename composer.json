@@ -34,6 +34,7 @@
         "drupal/devel": "^1.2",
         "drupal/google_analytics": "^2.3",
         "drupal/google_tag": "^1.1",
+        "drupal/masquerade": "^2.0@beta",
         "drupal/simple_block": "^1.0@beta",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "~8",
