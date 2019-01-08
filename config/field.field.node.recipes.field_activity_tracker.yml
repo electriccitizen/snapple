@@ -1,0 +1,29 @@
+uuid: a5c2f38e-67d8-4902-b8bb-ecb6a48e16de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_tracker
+    - node.type.recipes
+    - taxonomy.vocabulary.activity_tracker
+id: node.recipes.field_activity_tracker
+field_name: field_activity_tracker
+entity_type: node
+bundle: recipes
+label: 'Activity Tracker'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      activity_tracker: activity_tracker
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

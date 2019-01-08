@@ -1,0 +1,37 @@
+uuid: 7df437bb-464c-46de-a06b-1d046bbfe025
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.recipes.body
+    - field.field.node.recipes.field_activity_tracker
+    - node.type.recipes
+  module:
+    - text
+    - user
+id: node.recipes.default
+targetEntityType: node
+bundle: recipes
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_activity_tracker:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

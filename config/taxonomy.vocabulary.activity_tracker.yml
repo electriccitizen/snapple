@@ -1,0 +1,9 @@
+uuid: 74902ead-a0db-47e7-ad36-2719d8cf504c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Activity Tracker'
+vid: activity_tracker
+description: 'Categories for activity tagging'
+hierarchy: 0
+weight: 0
