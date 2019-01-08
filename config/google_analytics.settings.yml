@@ -26,11 +26,14 @@ privacy:
 custom:
   dimension:
     1:
-      value: '[node:title]'
+      value: '[node:field_activity_tracker:entity]'
       index: 1
     2:
-      value: '[node:field_activity_tracker:entity]'
+      value: '[node:content-type]'
       index: 2
+    3:
+      value: '[node:title]'
+      index: 3
   metric: {  }
 codesnippet:
   create: {  }
