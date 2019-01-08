@@ -21,4 +21,4 @@ services:
     # Uncomment to add support for xdebug - see http://docksal.readthedocs.io/en/master/tools/xdebug/.  
     environment:
       - PANTHEON_SITE_ENV
-#      - XDEBUG_ENABLED=1
+      - XDEBUG_ENABLED=1

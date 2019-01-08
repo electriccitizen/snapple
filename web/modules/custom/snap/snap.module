@@ -1,0 +1,14 @@
+<?php
+
+function snap_user_login($account) {
+    $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    if ($user->get('field_gaid')->value == NULL) {
+        $gaid = google_analytics_user_id_hash($account->id());
+        $user->set('field_gaid', $gaid);
+        $user->save();
+    }
+
+
+
+
+}
