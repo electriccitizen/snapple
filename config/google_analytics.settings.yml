@@ -7,7 +7,7 @@ visibility:
   request_path_pages: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
   user_role_mode: 0
   user_role_roles: {  }
-  user_account_mode: 0
+  user_account_mode: 1
 track:
   outbound: true
   mailto: true
@@ -16,15 +16,21 @@ track:
   colorbox: true
   linkid: false
   urlfragments: false
-  userid: false
+  userid: true
   messages: {  }
-  site_search: false
+  site_search: true
   adsense: false
   displayfeatures: false
 privacy:
   anonymizeip: true
 custom:
-  dimension: {  }
+  dimension:
+    1:
+      value: '[node:title]'
+      index: 1
+    2:
+      value: '[node:field_activity_tracker:entity]'
+      index: 2
   metric: {  }
 codesnippet:
   create: {  }
