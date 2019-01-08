@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_gaid
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -20,6 +21,19 @@ content:
     region: content
   contact:
     weight: 5
+    region: content
+  field_gaid:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  google_analytics:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
     region: content
   language:
     weight: 0
