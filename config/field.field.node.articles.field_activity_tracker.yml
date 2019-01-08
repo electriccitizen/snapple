@@ -1,0 +1,29 @@
+uuid: 05fb3312-ac3e-40e5-9b72-c60d89663ff7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_tracker
+    - node.type.articles
+    - taxonomy.vocabulary.activity_tracker
+id: node.articles.field_activity_tracker
+field_name: field_activity_tracker
+entity_type: node
+bundle: articles
+label: 'Activity Tracker'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      activity_tracker: activity_tracker
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

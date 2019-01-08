@@ -1,17 +1,17 @@
-uuid: 7df437bb-464c-46de-a06b-1d046bbfe025
+uuid: 3b8793f1-af6f-4db6-b7c1-da5ba4477257
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.recipes.field_activity_tracker
-    - field.field.node.recipes.field_content
-    - node.type.recipes
+    - field.field.node.articles.field_activity_tracker
+    - field.field.node.articles.field_content
+    - node.type.articles
   module:
     - text
     - user
-id: node.recipes.default
+id: node.articles.default
 targetEntityType: node
-bundle: recipes
+bundle: articles
 mode: default
 content:
   field_activity_tracker:

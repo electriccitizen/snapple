@@ -1,16 +1,16 @@
-uuid: 6064021c-02b8-405f-b01f-785f36aec5b2
+uuid: fb1e87f8-80d8-4972-9207-5822b1292941
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.recipes.field_activity_tracker
-    - node.type.recipes
+    - field.field.node.articles.field_activity_tracker
+    - node.type.articles
   module:
     - user
-id: node.recipes.teaser
+id: node.articles.teaser
 targetEntityType: node
-bundle: recipes
+bundle: articles
 mode: teaser
 content:
   links:
