@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Implements hook_user_login().
+ */
 function snap_user_login($account) {
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     if ($user->get('field_gaid')->value == NULL) {
@@ -7,8 +9,44 @@ function snap_user_login($account) {
         $user->set('field_gaid', $gaid);
         $user->save();
     }
+}
 
 
+/**
+ * Implements hook_token_info().
+ */
+function snap_token_info() {
+    $info = [];
+    $info['types']['custom_tokens'] = ['name' => t('Custom tokens'), 'description' => t('Custom tokens')];
+    $info['tokens']['custom_tokens']['gaid'][] = 'A token to send a users GAID back to Google Analtyics as a custom dimension.';
+  return $info;
+}
 
+/**
+ * Implements hook_tokens().
+ */
+function  snap_tokens($type, $tokens, array $data, array $options, \Drupal\Core\Render\BubbleableMetadata $bubbleable_metadata) {
+    $replacements = [];
+    if ($type == 'custom_tokens') {
 
+            foreach ($tokens as $name => $original) {
+                // Find the desired token by name.
+                switch ($name) {
+                    case 'gaid':
+                        $replacements[$original] = gaid_token_value();
+                    break;
+                }
+            }
+    }
+    return $replacements;
+}
+
+/**
+ * Helper function to return GAID token
+ */
+
+function gaid_token_value() {
+    $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    $gaid = $user->get('field_gaid')->value;
+    return $gaid;
 }
