@@ -1,0 +1,4 @@
+snap:
+  version: 1.x
+  js:
+    js/riveted.min.js: {}

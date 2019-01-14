@@ -50,3 +50,11 @@ function gaid_token_value() {
     $gaid = $user->get('field_gaid')->value;
     return $gaid;
 }
+
+/**
+ * Attach Riveted library for GA
+ */
+
+function snap_page_attachments(array &$page) {
+    $page['#attached']['library'][] = 'snap/snap';
+}
