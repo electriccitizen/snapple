@@ -55,6 +55,8 @@ function gaid_token_value() {
  * Attach Riveted library for GA
  */
 
-function _snap_page_attachments(array &$page) {
+function snap_page_attachments(array &$page) {
+    $page['#attached']['library'][] = 'snap/snapinit';
     $page['#attached']['library'][] = 'snap/snap';
+
 }

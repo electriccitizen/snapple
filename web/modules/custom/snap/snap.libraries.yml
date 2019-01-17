@@ -1,4 +1,13 @@
+snapinit:
+  version: 1.x
+  header: true
+  js:
+    js/riveted.min.js: {  }
+  dependencies:
+    - core/jquery
 snap:
   version: 1.x
   js:
-    js/riveted.min.js: {}
+    js/rivetconfig.js: {  }
+  dependencies:
+    - core/jquery
