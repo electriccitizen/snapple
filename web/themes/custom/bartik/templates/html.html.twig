@@ -37,6 +37,19 @@
         riveted.init();
       </script>
 
+      <script type="text/javascript">
+        TimeMe.initialize({
+          idleTimeoutInSeconds: 30 // seconds
+        });
+      </script>
+
+
+<script type="text/javascript">
+  var timeInSeconds = TimeMe.getTimeOnCurrentPageInSeconds();
+
+
+</script>
+
       </head>
   <body{{ attributes }}>
     {#

@@ -3,11 +3,8 @@ snapinit:
   header: true
   js:
     js/riveted.min.js: {  }
+    js/timeme.min.js: {  }
+    js/time_custom.js: {  }
   dependencies:
     - core/jquery
-snap:
-  version: 1.x
-  js:
-    js/rivetconfig.js: {  }
-  dependencies:
-    - core/jquery
+    - core/drupal
