@@ -8,7 +8,7 @@
                 xmlhttp=new XMLHttpRequest();
                 xmlhttp.open("POST","http://www.google-analytics.com/collect?", true);
                 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                xmlhttp.send("v=1&tid=UA-131852001-1&cid=555&t=pageview&cd5=" + timeSpentOnPage);
+                xmlhttp.send("v=1&tid=UA-131852001-1&cid=555&t=pageview&metric1=666cd5=999");
             });
 
         }
