@@ -1,0 +1,64 @@
+uuid: c6455c56-74ea-4e04-8e0d-8ee1769fa918
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.snap_stats_entity.snap_stats_entity.field_user_reference
+  module:
+    - snap_stats
+id: snap_stats_entity.snap_stats_entity.default
+targetEntityType: snap_stats_entity
+bundle: snap_stats_entity
+mode: default
+content:
+  field_user_reference:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  snap_data_category:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    region: content
+    weight: 8
+    third_party_settings: {  }
+  snap_data_seconds:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    region: content
+    weight: 6
+    third_party_settings: {  }
+  snap_data_uid:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    region: content
+    weight: 7
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

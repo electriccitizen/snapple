@@ -1,0 +1,29 @@
+uuid: da6d2741-e72c-4133-92b3-38c9786fde00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.snap_stats_entity.field_user_reference
+  module:
+    - snap_stats
+id: snap_stats_entity.snap_stats_entity.field_user_reference
+field_name: field_user_reference
+entity_type: snap_stats_entity
+bundle: snap_stats_entity
+label: 'User reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: fb3c5d12-a5c4-4b6d-9455-4a0bf26de2ce
+langcode: en
+status: true
+dependencies: {  }
+id: snap
+label: snap
+description: ''
+source_type: null
+module: null
+shared_configuration: null

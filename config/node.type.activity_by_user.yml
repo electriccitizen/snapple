@@ -1,0 +1,17 @@
+uuid: 63764a8c-cf17-4bb1-b28b-37317e1f9838
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Activity by User'
+type: activity_by_user
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

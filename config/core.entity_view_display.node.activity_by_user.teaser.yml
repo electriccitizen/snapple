@@ -1,0 +1,22 @@
+uuid: b935d373-98c2-4c5a-af18-b88493aed217
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.activity_by_user.field_userid
+    - node.type.activity_by_user
+  module:
+    - user
+id: node.activity_by_user.teaser
+targetEntityType: node
+bundle: activity_by_user
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_userid: true

@@ -1,0 +1,10 @@
+uuid: 416ceb71-bb8f-4b5a-9914-7b25bf751c07
+langcode: en
+status: true
+dependencies: {  }
+id: games_example
+label: games_example
+description: ''
+source_type: null
+module: null
+shared_configuration: null

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_foo
     - field.field.user.user.field_gaid
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -21,6 +22,14 @@ content:
     region: content
   contact:
     weight: 5
+    region: content
+  field_foo:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_gaid:
     weight: 7

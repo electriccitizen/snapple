@@ -1,0 +1,23 @@
+uuid: 9dd094db-6617-425e-8850-ce282bd3a8fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seconds
+    - node.type.activity_by_user
+id: node.activity_by_user.field_seconds
+field_name: field_seconds
+entity_type: node
+bundle: activity_by_user
+label: SECONDS
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

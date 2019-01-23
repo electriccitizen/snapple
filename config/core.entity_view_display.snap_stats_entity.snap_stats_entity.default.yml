@@ -1,0 +1,38 @@
+uuid: c6d1c885-2988-45ac-8478-f97c629dd97b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.snap_stats_entity.snap_stats_entity.field_user_reference
+  module:
+    - snap_stats
+    - user
+id: snap_stats_entity.snap_stats_entity.default
+targetEntityType: snap_stats_entity
+bundle: snap_stats_entity
+mode: default
+content:
+  field_user_reference:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
