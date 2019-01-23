@@ -54,7 +54,15 @@ class TotalTimeOnSite extends FieldPluginBase {
     // Return a random text, here you can include your custom logic.
     // Include any namespace required to call the method required to generate
     // the desired output.
-      $user = $values->_entity;
+
+    foreach ($values as $v) {
+     $v = $v;
+    }
+     $user = $values->_entity;
+     $useref = $values->_relationship_entities['reverse__snap_stats_entity__field_user_reference'];
+
+if ($useref) {
+}
       if ($user->bundle() == 'user') {
           return $this->t('Hey, I\'m of the type user foo man');
       }

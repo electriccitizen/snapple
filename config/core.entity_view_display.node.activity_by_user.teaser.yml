@@ -19,4 +19,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_category: true
+  field_seconds: true
   field_userid: true
