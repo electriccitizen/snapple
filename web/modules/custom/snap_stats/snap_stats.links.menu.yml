@@ -1,0 +1,14 @@
+
+# Snap stats entity menu items definition
+entity.snap_stats_entity.collection:
+  title: 'Snap stats'
+  route_name: entity.snap_stats_entity.collection
+  description: 'List Snap stats entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+snap_stats_entity.admin.structure.settings:
+  title: 'Snap stats settings'
+  description: 'Configure Snap stats entity entities'
+  route_name: snap_stats_entity.settings
+  parent: system.admin_structure

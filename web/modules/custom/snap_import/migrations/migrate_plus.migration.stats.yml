@@ -1,0 +1,46 @@
+# This migration demonstrates importing from a Google Spreadsheet XML feed.
+id: stats
+label: Snap statistics
+migration_group: snap
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: google_sheets
+  urls: 'https://spreadsheets.google.com/feeds/list/1rmhwIEQLKb1tTBC3XcmIoaB0c7E4LNT2F40XTCHXQpY/3/public/values?alt=json'
+  fields:
+    -
+      name: id
+      label: 'Unique identifier'
+      selector: 'id'
+    -
+      name: name
+      label: 'Entity name'
+      selector: 'gadimension1'
+    -
+      name: snap_data_uid
+      label: 'User id'
+      selector: 'gadimension4'
+    -
+      name: snap_data_category
+      label: 'Category'
+      selector: 'gadimension1'
+    -
+      name: snap_data_seconds
+      label: 'Seconds'
+      selector: 'eventvalue'
+  ids:
+    id:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: snap
+  name: name
+  snap_data_seconds: snap_data_seconds
+  snap_data_uid: snap_data_uid
+  snap_data_category: snap_data_category
+  user_id:
+    plugin: map_author
+    source: snap_data_uid
+destination:
+  plugin: entity:snap_stats_entity

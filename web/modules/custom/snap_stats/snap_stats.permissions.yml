@@ -1,0 +1,19 @@
+add snap stats entity entities:
+  title: 'Create new Snap stats entity entities'
+
+administer snap stats entity entities:
+  title: 'Administer Snap stats entity entities'
+  description: 'Allow to access the administration form to configure Snap stats entity entities.'
+  restrict access: true
+
+delete snap stats entity entities:
+  title: 'Delete Snap stats entity entities'
+
+edit snap stats entity entities:
+  title: 'Edit Snap stats entity entities'
+
+view published snap stats entity entities:
+  title: 'View published Snap stats entity entities'
+
+view unpublished snap stats entity entities:
+  title: 'View unpublished Snap stats entity entities'

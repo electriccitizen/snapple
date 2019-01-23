@@ -1,0 +1,5 @@
+entity.snap_stats_entity.add_form:
+  route_name: entity.snap_stats_entity.add_form
+  title: 'Add Snap stats entity'
+  appears_on:
+    - entity.snap_stats_entity.collection

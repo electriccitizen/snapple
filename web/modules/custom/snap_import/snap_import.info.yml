@@ -1,0 +1,5 @@
+name: Snap Analytics Google Sheets importer
+type: module
+description: Custom code for SNAP analytics import
+core: 8.x
+package: Custom

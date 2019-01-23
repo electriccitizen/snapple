@@ -1,0 +1,7 @@
+name: 'Snap Stats'
+type: module
+description: 'Custom entity type to store analtyics data from Google Analytics'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - snap
